@@ -1,9 +1,21 @@
 # postman-pre-request-rsasign
 
+## 签名策略
+
+签名的字符串：`${developerRn}${now}${nonce}`<br/>
+
+`字段解释`
+`now` = 当前时间戳<br/>
+`nonce` = 12 位随机字符串<br/>
+`developerRn` = 开发者资源名（纯字符串）<br/>
+
+// 如需修改签名策略，可手动修改源码拼接字符串部份的逻辑<br/>
+
 ## 操作指南
 
 #### 第一步：
 复制如下内容 ⬇️ 到 postman header 中<br/>
+[代码](./preRequest.js)
 ```
 developerRn:{{developerRn}}
 nonce:{{nonce}}
