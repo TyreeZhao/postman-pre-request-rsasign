@@ -4,7 +4,7 @@
 
 签名的字符串：`${developerRn}${now}${nonce}`<br/>
 
-`字段解释`
+#### 字段解释
 `now` = 当前时间戳<br/>
 `nonce` = 12 位随机字符串<br/>
 `developerRn` = 开发者资源名（纯字符串）<br/>
